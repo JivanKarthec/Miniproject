@@ -1,44 +1,52 @@
-## Title of the Project
+## Automated Endpoint Detection and Response with LimaCharlie and Tines
+
 Small description about the project like one below
-The integration of a chatbot within a hostel booking system, aimed at streamlining the reservation process for students and improving the overall user experience.
+The integration of LimaCharlie and Tines within a SOAR framework to automate the detection of malicious processes, streamline incident response workflows, and enhance decision-making for SOC teams through real-time alerts and actionable prompts.
+
 
 ## About
 <!--Detailed Description about the project-->
-Tailored Chatbot for Hostel Booking System is a project designed to integrate a chatbot that leverages advanced natural language processing techniques to understand and respond to user queries to the hostel booking system. Traditional hostel booking processes are often time-consuming and involve manual searches and extensive communication with hostel staff. This project seeks to overcome these challenges by creating an easy-to-use chatbot interface that assists students in addressing inquiries.
+The SOAR-EDR Integration for Automated Incident Detection and Response project focuses on improving cybersecurity operations by combining LimaCharlie for advanced threat detection with Tines for workflow automation. The project automates the process of detecting, notifying, and responding to cyber threats, reducing manual intervention and enabling SOC teams to make quick, informed decisions. It aims to create an efficient and scalable security system that ensures rapid incident resolution.
 
 ## Features
 <!--List the features of the project as shown below-->
-- Implements advance neural network method.
-- A framework based application for deployment purpose.
-- High scalability.
-- Less time complexity.
-- A specific scope of Chatbot response model, using json data format.
+- Real-time Threat Detection: Leverages LimaCharlie to identify malicious processes effectively.
+- Automation Workflows: Tines handles automated alerting and response actions like Slack and email notifications.
+- Scalable and Flexible: Integrates seamlessly with existing tools and infrastructure for enhanced adaptability.
+- User Decision Prompting: SOC team involvement for critical actions like isolating compromised systems.
 
 ## Requirements
 <!--List the requirements of the project as shown below-->
-* Operating System: Requires a 64-bit OS (Windows 10 or Ubuntu) for compatibility with deep learning frameworks.
-* Development Environment: Python 3.6 or later is necessary for coding the sign language detection system.
+* Operating System: Cloud-based platforms; compatible with modern endpoints (Windows, Linux, or macOS).
+* Automation Platform: Tines for no-code workflow creation and task automation.
 * Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
-* Image Processing Libraries: OpenCV is essential for efficient image processing and real-time hand gesture recognition.
-* Version Control: Implementation of Git for collaborative development and effective code management.
-* IDE: Use of VSCode as the Integrated Development Environment for coding, debugging, and version control integration.
-* Additional Dependencies: Includes scikit-learn, TensorFlow (versions 2.4.1), TensorFlow GPU, OpenCV, and Mediapipe for deep learning tasks.
+* Detection Platform: LimaCharlie for advanced threat detection and response capabilities.
+* Communication Tools: Slack and email for real-time SOC notifications.
+* Version Control: Git for managing code and workflows.
 
 ## System Architecture
 <!--Embed the system architecture diagram as shown below-->
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
+![WhatsApp Image 2024-11-12 at 18 57 30_660a68c1](https://github.com/user-attachments/assets/b1f001f6-4886-462b-bd92-f83c38d769a9)
 
 
 ## Output
 
 <!--Embed the Output picture at respective places as shown below as shown below-->
-#### Output1 - Name of the output
+#### Output1 -Detection alert displayed on the LimaCharlie dashboard.
 
-![Screenshot 2023-11-25 134037](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/8c2b6b5c-5ed2-4ec4-b18e-5b6625402c16)
 
-#### Output2 - Name of the output
-![Screenshot 2023-11-25 134253](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/5e05c981-05ca-4aaa-aea2-d918dcf25cb7)
+![WhatsApp Image 2024-10-23 at 19 36 42_b84a2a6f](https://github.com/user-attachments/assets/16224508-a685-447b-9f62-3af37a1b0d0e)
+
+
+#### Output2 -Automated notifications sent to Slack and email.
+
+![WhatsApp Image 2024-10-23 at 19 36 40_fd012fdf](https://github.com/user-attachments/assets/6bf95473-4dae-4b50-b2f0-44ef63f9042b)
+
+#### Output3 -Automated notifications sent to Slack and email.
+
+![WhatsApp Image 2024-10-23 at 19 36 48_9f7a600f](https://github.com/user-attachments/assets/f3d29a6e-d3e8-4233-882c-6a108067f693)
+
 
 Detection Accuracy: 96.7%
 Note: These metrics can be customized based on your actual performance evaluations.
@@ -46,14 +54,19 @@ Note: These metrics can be customized based on your actual performance evaluatio
 
 ## Results and Impact
 <!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Efficiency Boost: Automates threat detection and response, reducing time to action.
+Enhanced Security Posture: Minimizes risk through rapid isolation of compromised endpoints.
+Team Enablement: Reduces SOC team workload while improving decision-making with actionable alerts.
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+Scalability: Provides a framework that can grow with organizational needs.
+This project highlights the effectiveness of combining advanced detection and automation tools, paving the way for more resilient and efficient cybersecurity solutions.
+
 
 ## Articles published / References
-1. N. S. Gupta, S. K. Rout, S. Barik, R. R. Kalangi, and B. Swampa, “Enhancing Heart Disease Prediction Accuracy Through Hybrid Machine Learning Methods ”, EAI Endorsed Trans IoT, vol. 10, Mar. 2024.
-2. A. A. BIN ZAINUDDIN, “Enhancing IoT Security: A Synergy of Machine Learning, Artificial Intelligence, and Blockchain”, Data Science Insights, vol. 2, no. 1, Feb. 2024.
+1.Gupta, S. K., & Rout, S. K. (2024). "Enhancing Cybersecurity Through SOAR Frameworks: Automation and Detection." Journal of Cybersecurity Operations.
 
+2.Bin Zainuddin, A. A. (2024). "Incident Response Automation: A Comparative Study of Platforms." Data Security Insights.
 
+3.Tines Automation Guide. Official Documentation. Retrieved 2024.
 
-
+4.LimaCharlie Detection Framework. Official Documentation. Retrieved 2024.
