@@ -1,0 +1,12 @@
+- action: report
+  metadata:
+    author: Jivan
+    description: Malicious File
+    falsepositives:
+      - ToTheMoon
+      - Legitimate software in temporary directories
+    level: high
+    tags:
+      - attack.credential_access
+      - attack.execution
+  name: Jivan - Malicious File
