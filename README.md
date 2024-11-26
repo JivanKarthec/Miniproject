@@ -15,6 +15,101 @@ The SOAR-EDR Integration for Automated Incident Detection and Response project f
 - Scalable and Flexible: Integrates seamlessly with existing tools and infrastructure for enhanced adaptability.
 - User Decision Prompting: SOC team involvement for critical actions like isolating compromised systems.
 
+## Detection and Respond Code
+<!--YAML code used in the project-->
+<!--DETECTION-->
+events:
+  - NEW_PROCESS
+  - EXISTING_PROCESS
+op: and
+rules:
+  - op: is
+    path: event/OS
+    value: windows
+  - op: or
+    rules:
+      - op: or
+        rules:
+          - case sensitive: false
+            op: ends with
+            path: event/FILE_PATH
+            value: LaZagne.exe
+          - case sensitive: false
+            op: contains
+            path: event/COMMAND_LINE
+            value: LaZagne
+          - case sensitive: false
+            op: is
+            path: event/HASH
+            value: 3cc5ee93a9ba1fc57389705283b760c8bd61f35e9398bbfa3210e2becf6d4b05
+      - op: and
+        rules:
+          - op: ends with
+            path: event/FILE_PATH
+            value: .exe
+          - op: or
+            rules:
+              - case sensitive: false
+                op: is
+                path: event/HASH
+                value: >-
+                  6f83a13395542fa733d05962a7c8c04db6dbac3bcf3655cb0ba021a8ef374ecb
+              - case sensitive: false
+                op: is
+                path: event/HASH
+                value: >-
+                  fa876c0e456a3a899512ed4c93f6fae30f7c47f4018e82cb7634b43c5a2d3e49
+              - case sensitive: false
+                op: is
+                path: event/HASH
+                value: >-
+                  ae02d4ab251f4ffb97f6b7b5e1266f03714a8575e6727f25f6a05c841c15978d
+              - op: or
+                rules:
+                  - case sensitive: false
+                    op: contains
+                    path: event/FILE_PATH
+                    value: C:\\Users\\Public\\Downloads\\
+                  - case sensitive: false
+                    op: contains
+                    path: event/FILE_PATH
+                    value: C:\\Windows\\Temp\\
+                  - case sensitive: false
+                    op: contains
+                    path: event/FILE_PATH
+                    value: C:\\ProgramData\\
+                  - case sensitive: false
+                    op: contains
+                    path: event/FILE_PATH
+                    value: C:\\Users\\%USERNAME%\\AppData\\Local\\Temp\\
+                  - case sensitive: false
+                    op: contains
+                    path: event/FILE_PATH
+                    value: C:\\Users\\Public\\Libraries\\
+              - op: or
+                rules:
+                  - op: contains
+                    path: event/COMMAND_LINE
+                    value: '-silent'
+                  - op: contains
+                    path: event/COMMAND_LINE
+                    value: '--extract'
+
+<!--RESPOND-->
+- action: report
+  metadata:
+    author: Jivan
+    description: Malicious File
+    falsepositives:
+      - ToTheMoon
+      - Legitimate software in temporary directories
+    level: high
+    tags:
+      - attack.credential_access
+      - attack.execution
+  name: Jivan - Malicious File
+
+
 ## Requirements
 <!--List the requirements of the project as shown below-->
 * Operating System: Cloud-based platforms; compatible with modern endpoints (Windows, Linux, or macOS).
