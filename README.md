@@ -114,7 +114,6 @@ rules:
 <!--List the requirements of the project as shown below-->
 * Operating System: Cloud-based platforms; compatible with modern endpoints (Windows, Linux, or macOS).
 * Automation Platform: Tines for no-code workflow creation and task automation.
-* Deep Learning Frameworks: TensorFlow for model training, MediaPipe for hand gesture recognition.
 * Detection Platform: LimaCharlie for advanced threat detection and response capabilities.
 * Communication Tools: Slack and email for real-time SOC notifications.
 * Version Control: Git for managing code and workflows.
